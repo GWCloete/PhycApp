@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{82168A1C-C932-4658-81DC-53BF243CF9F4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PhycApp</RootNamespace>
+    <AssemblyName>PhycApp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnkelC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AnkelC.Designer.cs">
+      <DependentUpon>AnkelC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CervicalSpine.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CervicalSpine.Designer.cs">
+      <DependentUpon>CervicalSpine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ElbowC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ElbowC.Designer.cs">
+      <DependentUpon>ElbowC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomeC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HomeC.Designer.cs">
+      <DependentUpon>HomeC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KneeC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="KneeC.Designer.cs">
+      <DependentUpon>KneeC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LumbarSpine.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LumbarSpine.Designer.cs">
+      <DependentUpon>LumbarSpine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PelvisC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PelvisC.Designer.cs">
+      <DependentUpon>PelvisC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SacralC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SacralC.Designer.cs">
+      <DependentUpon>SacralC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShoulderC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ShoulderC.Designer.cs">
+      <DependentUpon>ShoulderC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThoracicSpine.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ThoracicSpine.Designer.cs">
+      <DependentUpon>ThoracicSpine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WristC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WristC.Designer.cs">
+      <DependentUpon>WristC.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AnkelC.resx">
+      <DependentUpon>AnkelC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CervicalSpine.resx">
+      <DependentUpon>CervicalSpine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ElbowC.resx">
+      <DependentUpon>ElbowC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeC.resx">
+      <DependentUpon>HomeC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KneeC.resx">
+      <DependentUpon>KneeC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LumbarSpine.resx">
+      <DependentUpon>LumbarSpine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PelvisC.resx">
+      <DependentUpon>PelvisC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SacralC.resx">
+      <DependentUpon>SacralC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShoulderC.resx">
+      <DependentUpon>ShoulderC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThoracicSpine.resx">
+      <DependentUpon>ThoracicSpine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WristC.resx">
+      <DependentUpon>WristC.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
